@@ -200,8 +200,14 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         setupHeader();
         updateAcceptButton();
         progress = new ProgressDialog(this);
-        progress.setTitle("Processing Images");
-        progress.setMessage("This may take a few moments");
+        progress.setTitle(getAppResource("processing_images", "string"));
+        progress.setMessage(getAppResource("wait_message", "string"));
+    }
+
+    private String getAppResource(String name, String type) {
+      String packageName = getPackageName();
+      int identifier = getResources().getIdentifier(name, type, packageName);
+      return getResources().getString(identifier);
     }
 
     @Override

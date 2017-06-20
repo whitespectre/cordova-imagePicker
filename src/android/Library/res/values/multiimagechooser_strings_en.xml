@@ -6,4 +6,6 @@
     <string name="requesting_thumbnails">Requesting thumbnails, please be patient</string>
     <string name="discard">Cancel</string>
     <string name="done">OK</string>
+    <string name="processing_images">Processing Images</string>
+    <string name="wait_message">This may take a few moments</string>
 </resources>
