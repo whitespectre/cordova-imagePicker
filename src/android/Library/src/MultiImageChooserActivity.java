@@ -592,6 +592,11 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
 
         @Override
         protected void onPostExecute(ArrayList<String> al) {
+            if (MultiImageChooserActivity.this.isDestroyed() ||
+              MultiImageChooserActivity.this.isFinishing()) {
+              return;
+            }
+
             Intent data = new Intent();
 
             if (asyncTaskError != null) {
