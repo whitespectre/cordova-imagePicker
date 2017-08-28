@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wymsee/cordova-imagePicker.git"
+    "url": "git+https://github.com/whitespectre/cordova-imagePicker.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -31,3 +31,4 @@
   },
   "homepage": "https://github.com/wymsee/cordova-imagePicker#readme"
 }
+
